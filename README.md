@@ -59,7 +59,7 @@ It highlights my practical skills in:
 
 ## 📬 Contact
 - **Portfolio Website:** [Visit Here](https://itsPiyushVishwakarma.github.io/Cybersecurity-Portfolio)
-- **LinkedIn:** ([www.linkedin.com/in/itspiyushkarma-cybersecurity](https://www.linkedin.com/in/itspiyushkarma-cybersecurity/)
+- **LinkedIn:** [www.linkedin.com/in/itspiyushkarma-cybersecurity](https://www.linkedin.com/in/itspiyushkarma-cybersecurity/)
 - **Email:** vpiyush780@gmail.com
 ---
 
