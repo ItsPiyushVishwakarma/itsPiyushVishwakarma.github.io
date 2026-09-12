@@ -16,7 +16,7 @@ It highlights my practical skills in:
 ---
 
 ### 🖼️ Portfolio Preview
-![Portfolio Preview](assets/images/portfolio-preview.png)
+![Portfolio Preview](assets/overview.png)
 
 ---
 
