@@ -1,53 +1,70 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    // 1. Matrix Rain Background (Original subtle matrix)
+    // 1. Binary / Matrix Rain Background
     const initMatrixRain = () => {
         const canvas = document.getElementById('matrix-bg');
         if (!canvas) return;
         const ctx = canvas.getContext('2d');
-        
-        let width = canvas.width = window.innerWidth;
-        let height = canvas.height = window.innerHeight;
-        
-        const chars = '01アイウエオカキクケコサシスセソ'.split('');
-        const fontSize = 14;
-        let columns = Math.floor(width / fontSize);
-        let drops = [];
-        
-        for (let x = 0; x < columns; x++) {
-            drops[x] = 1;
-        }
-        
-        const draw = () => {
-            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
-            ctx.fillRect(0, 0, width, height);
-            
-            ctx.fillStyle = '#00ff88'; // Green text
-            ctx.font = fontSize + 'px monospace';
-            
-            for (let i = 0; i < drops.length; i++) {
-                const text = chars[Math.floor(Math.random() * chars.length)];
-                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
-                
-                if (drops[i] * fontSize > height && Math.random() > 0.975) {
-                    drops[i] = 0;
-                }
-                drops[i]++;
-            }
-        };
-        
-        let interval = setInterval(draw, 50);
-        
-        window.addEventListener('resize', () => {
+
+        // Mostly binary, with a sprinkle of hex and katakana for texture
+        const chars = '0101010101010101ABCDEF0x{}#$アカサタナ'.split('');
+        const fontSize = 15;
+        let width, height, columns, drops, colors, speeds;
+
+        const setup = () => {
             width = canvas.width = window.innerWidth;
             height = canvas.height = window.innerHeight;
             columns = Math.floor(width / fontSize);
-            drops = [];
-            for (let x = 0; x < columns; x++) {
-                drops[x] = 1;
+            // Random start heights so the screen is already "raining" on load
+            drops = Array.from({ length: columns }, () => Math.floor(Math.random() * -height / fontSize));
+            // ~1 in 4 columns cyan, rest green
+            colors = Array.from({ length: columns }, () => (Math.random() < 0.25 ? '#00e5ff' : '#00ff88'));
+            // Slightly different speeds per column
+            speeds = Array.from({ length: columns }, () => 0.6 + Math.random() * 0.6);
+            ctx.fillStyle = '#000';
+            ctx.fillRect(0, 0, width, height);
+        };
+
+        const draw = () => {
+            // Fade previous frame to leave a trail
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.07)';
+            ctx.fillRect(0, 0, width, height);
+            ctx.font = `${fontSize}px "JetBrains Mono", monospace`;
+
+            for (let i = 0; i < columns; i++) {
+                const y = Math.floor(drops[i]) * fontSize;
+                if (y > 0) {
+                    const text = chars[Math.floor(Math.random() * chars.length)];
+                    // Trail character just above the head in the column color
+                    ctx.fillStyle = colors[i];
+                    ctx.fillText(text, i * fontSize, y - fontSize);
+                    // Bright leading character
+                    ctx.fillStyle = '#d9fff0';
+                    ctx.fillText(chars[Math.floor(Math.random() * 2)], i * fontSize, y);
+                }
+
+                if (y > height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i] += speeds[i];
             }
-            clearInterval(interval);
-            interval = setInterval(draw, 50);
+        };
+
+        setup();
+        let last = 0;
+        const loop = (t) => {
+            if (t - last > 50) {
+                draw();
+                last = t;
+            }
+            requestAnimationFrame(loop);
+        };
+        requestAnimationFrame(loop);
+
+        let resizeTimer;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(setup, 150);
         });
     };
 
@@ -120,9 +137,10 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const sequences = [
             { cmd: 'whoami', output: 'Piyush Vishwakarma' },
-            { cmd: 'cat headline.txt', output: 'Cybersecurity | Python, Linux & Network Security | AWS Certified' },
-            { cmd: 'nmap -sV target.local', output: 'Ports: 22/SSH, 80/HTTP, 443/HTTPS | Status: Secured' },
-            { cmd: 'cat arsenal.txt', output: 'Wireshark • Nmap • Metasploit • Burp Suite • Python • AWS' }
+            { cmd: 'cat role.txt', output: 'Cybersecurity Analyst | SOC | DFIR | VAPT' },
+            { cmd: 'ufed --extract iphone.img', output: 'Extraction complete | hash verified | chain of custody logged' },
+            { cmd: 'grep -c "Failed password" auth.log', output: '1,284 hits -> brute-force from 3 IPs flagged' },
+            { cmd: 'cat arsenal.txt', output: 'Cellebrite • Autopsy • FTK • Wireshark • Burp Suite • AWS' }
         ];
         
         let seqIndex = 0;
@@ -184,11 +202,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!roleEl) return;
         
         const roles = [
-            'Network Security & Analysis',
-            'Python Security Tool Development',
-            'AWS Certified Cloud Practitioner',
-            'Threat Detection & Digital Forensics',
-            'MCA Cybersecurity Student'
+            'Digital Forensics',
+            'SOC & Incident Response',
+            'Vulnerability Assessment (VAPT)',
+            'Threat Detection & Log Analysis',
+            'Python Security Tooling',
+            'AWS Cloud Security'
         ];
         let roleIndex = 0;
         
@@ -232,7 +251,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
         renderRing();
         
-        const interactiveElements = document.querySelectorAll('a, button, input, textarea, .project-card, .cert-card, .tool-badge');
+        const interactiveElements = document.querySelectorAll('a, button, input, textarea, .project-card, .cert-card, .tool-badge, .lab-card');
         interactiveElements.forEach(el => {
             el.addEventListener('mouseenter', () => {
                 ring.style.transform = `translate3d(${ringX - 27}px, ${ringY - 27}px, 0) scale(1.5)`;
@@ -327,26 +346,89 @@ document.addEventListener('DOMContentLoaded', () => {
         reveals.forEach(el => observer.observe(el));
     };
 
-    // 10. Skill Bars Animation
-    const initSkillBars = () => {
-        const skillFills = document.querySelectorAll('.skill-fill');
-        if (skillFills.length === 0) return;
-        
+    // 10. Project Filters
+    const initProjectFilters = () => {
+        const buttons = document.querySelectorAll('.filter-btn');
+        const cards = document.querySelectorAll('.projects-grid .project-card');
+        if (buttons.length === 0 || cards.length === 0) return;
+
+        buttons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.dataset.filter;
+                buttons.forEach(b => b.classList.toggle('active', b === btn));
+                cards.forEach(card => {
+                    const cats = (card.dataset.category || '').split(' ');
+                    const show = filter === 'all' || cats.includes(filter);
+                    card.classList.toggle('is-hidden', !show);
+                    if (show) card.classList.add('revealed');
+                });
+            });
+        });
+    };
+
+    // 10b. Stat Count-Up
+    const initCountUp = () => {
+        const counters = document.querySelectorAll('.count-up');
+        if (counters.length === 0) return;
+
         const observer = new IntersectionObserver((entries, obs) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const width = entry.target.getAttribute('data-width');
-                    if (width) {
-                        entry.target.style.width = `${width}%`;
-                    }
-                    obs.unobserve(entry.target);
-                }
+                if (!entry.isIntersecting) return;
+                const el = entry.target;
+                const target = parseInt(el.dataset.target, 10) || 0;
+                const duration = 1200;
+                const start = performance.now();
+                const tick = (now) => {
+                    const p = Math.min((now - start) / duration, 1);
+                    el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3)));
+                    if (p < 1) requestAnimationFrame(tick);
+                };
+                el.textContent = '0';
+                requestAnimationFrame(tick);
+                obs.unobserve(el);
             });
-        }, { threshold: 0.2 });
-        
-        skillFills.forEach(fill => {
-            fill.style.width = '0%';
-            observer.observe(fill);
+        }, { threshold: 0.6 });
+
+        counters.forEach(c => observer.observe(c));
+    };
+
+    // 10c. Scroll Progress + Back to Top
+    const initScrollUtils = () => {
+        const bar = document.getElementById('scrollProgress');
+        const topBtn = document.getElementById('backToTop');
+
+        const update = () => {
+            const max = document.documentElement.scrollHeight - window.innerHeight;
+            const pct = max > 0 ? (window.scrollY / max) * 100 : 0;
+            if (bar) bar.style.width = `${pct}%`;
+            if (topBtn) topBtn.classList.toggle('visible', window.scrollY > 600);
+        };
+
+        window.addEventListener('scroll', update, { passive: true });
+        update();
+    };
+
+    // 10d. Copy Email
+    const initCopyEmail = () => {
+        const btn = document.getElementById('copyEmail');
+        if (!btn || !navigator.clipboard) {
+            if (btn) btn.style.display = 'none';
+            return;
+        }
+        const label = btn.querySelector('span');
+
+        btn.addEventListener('click', async () => {
+            try {
+                await navigator.clipboard.writeText(btn.dataset.copy);
+                btn.classList.add('copied');
+                if (label) label.textContent = 'Copied!';
+            } catch (err) {
+                if (label) label.textContent = 'Press Ctrl+C';
+            }
+            setTimeout(() => {
+                btn.classList.remove('copied');
+                if (label) label.textContent = 'Copy';
+            }, 1800);
         });
     };
 
@@ -385,6 +467,9 @@ document.addEventListener('DOMContentLoaded', () => {
     initNavbarScroll();
     initNavHighlight();
     initScrollReveal();
-    initSkillBars();
+    initProjectFilters();
+    initCountUp();
+    initScrollUtils();
+    initCopyEmail();
     initSmoothScroll();
 });

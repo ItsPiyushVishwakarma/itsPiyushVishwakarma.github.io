@@ -3,12 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Piyush Vishwakarma — Cybersecurity | Python, Linux & Network Security | AWS Certified Cloud Practitioner | MCA Student" />
+  <meta name="description" content="Piyush Vishwakarma — Cybersecurity Analyst | SOC | Digital Forensics | Incident Response | VAPT. AWS Certified Cloud Practitioner and empanelled Security Researcher, National Security Database." />
   <meta name="author" content="Piyush Vishwakarma" />
-  <meta name="keywords" content="cybersecurity, portfolio, Piyush Vishwakarma, SOC analyst, cloud security, python, nmap, wireshark, metasploit, burp suite, network security" />
+  <meta name="keywords" content="cybersecurity analyst, SOC analyst, digital forensics, incident response, VAPT, Piyush Vishwakarma, Cellebrite UFED, Autopsy, FTK, MITRE ATT&CK, wireshark, burp suite, nmap, AWS" />
+  <meta name="theme-color" content="#0a0b10" />
   <meta property="og:title" content="Piyush Vishwakarma | Cybersecurity Portfolio" />
-  <meta property="og:description" content="Cybersecurity | Python, Linux & Network Security | AWS Certified Cloud Practitioner | MCA Student" />
+  <meta property="og:description" content="Cybersecurity Analyst | SOC | Digital Forensics | Incident Response | VAPT" />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://itspiyushvishwakarma.github.io/" />
+  <meta property="og:image" content="https://itspiyushvishwakarma.github.io/assets/overview.png" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/jpeg" href="assets/piyush_photo.jpg" />
   <title>Piyush Vishwakarma | Cybersecurity Portfolio</title>
 
@@ -24,6 +28,9 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
   <!-- Custom Cursor -->
   <div class="cursor-dot" aria-hidden="true"></div>
@@ -41,11 +48,15 @@
 
     <nav class="nav-links" id="navLinks">
       <a href="#about">About</a>
-      <a href="#skills">Skills &amp; Tools</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#certifications">Certifications</a>
       <a href="#resume">Resume</a>
       <a href="#contact">Contact</a>
+      <a href="assets/Piyush_Resume.pdf" class="nav-cta" download>
+        <ion-icon name="download-outline"></ion-icon> CV
+      </a>
     </nav>
 
     <button class="mobile-toggle" id="mobileMenu" aria-label="Toggle navigation menu">
@@ -82,51 +93,56 @@
 
           <p class="headline-badge">
             <span class="badge-dot"></span>
-            Cybersecurity | Python, Linux &amp; Network Security | AWS Certified Cloud Practitioner | MCA Student
+            Cybersecurity Analyst | SOC | Digital Forensics | Incident Response | VAPT
           </p>
 
           <p class="role-text">
             <span class="role-prefix">Specializing in</span>
-            <span class="role-cycle" id="roleCycle">Network Security</span>
+            <span class="role-cycle" id="roleCycle">Digital Forensics</span>
           </p>
 
           <p class="hero-desc">
-            Proactive Cybersecurity Specialist &amp; AWS Certified Cloud Practitioner focused on Blue Team Operations,
-            Network Defense, and Threat Automation. Engineering custom security scanners, packet analysis tools,
-            and telemetry monitors while advancing practical capabilities across enterprise environments.
+            Cybersecurity analyst with hands-on digital forensics experience across disk, Windows, mobile (iOS &amp; Android)
+            and network investigations, plus log analysis and vulnerability assessment. AWS Certified Cloud Practitioner
+            and empanelled Security Researcher with the National Security Database.
           </p>
 
           <div class="hero-credentials-bar">
+            <span class="cred-chip"><ion-icon name="finger-print-outline"></ion-icon> Digital Forensics Intern</span>
             <span class="cred-chip"><ion-icon name="shield-checkmark"></ion-icon> AWS Certified Cloud Practitioner</span>
-            <span class="cred-chip"><ion-icon name="ribbon"></ion-icon> AWS re/Start Graduate</span>
-            <span class="cred-chip"><ion-icon name="location-outline"></ion-icon> Thane, Maharashtra, India</span>
+            <span class="cred-chip"><ion-icon name="ribbon"></ion-icon> NSD Security Researcher</span>
+            <span class="cred-chip"><ion-icon name="location-outline"></ion-icon> Thane, India · Open to Relocation</span>
           </div>
 
           <div class="hero-cta">
             <a href="#projects" class="btn btn-primary">
-              <ion-icon name="code-slash-outline"></ion-icon> View 8 Projects
+              <ion-icon name="code-slash-outline"></ion-icon> View Projects
             </a>
-            <a href="https://drive.google.com/file/d/1kHEtKGbH6kl5P-fatvZp3MGc2OH2B8MX/view?usp=sharing" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+            <a href="assets/Piyush_Resume.pdf" class="btn btn-secondary" download>
               <ion-icon name="document-text-outline"></ion-icon> Download Resume
             </a>
+            <div class="hero-social">
+              <a href="https://www.linkedin.com/in/itspiyushkarma-cybersecurity" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><ion-icon name="logo-linkedin"></ion-icon></a>
+              <a href="https://github.com/ItsPiyushVishwakarma" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><ion-icon name="logo-github"></ion-icon></a>
+            </div>
           </div>
 
           <div class="hero-stats">
             <div class="stat">
-              <span class="stat-num">8</span>
+              <span class="stat-num count-up" data-target="11">11</span>
               <span>Security Projects</span>
             </div>
             <div class="stat">
-              <span class="stat-num">13+</span>
-              <span>Certificates</span>
+              <span class="stat-num count-up" data-target="14">14</span>
+              <span>Certifications</span>
             </div>
             <div class="stat">
               <span class="stat-num">AWS</span>
               <span>Certified</span>
             </div>
             <div class="stat">
-              <span class="stat-num">MCA</span>
-              <span>Student</span>
+              <span class="stat-num">NSD</span>
+              <span>Researcher</span>
             </div>
           </div>
         </div>
@@ -156,40 +172,98 @@
             </div>
             <div>
               <h3>Piyush Vishwakarma</h3>
-              <p class="about-subhead">Cybersecurity Student &amp; Security Tool Builder</p>
-              <p class="about-location"><ion-icon name="location-sharp"></ion-icon> Thane, Maharashtra, India • <ion-icon name="mail-outline"></ion-icon> vpiyush780@gmail.com</p>
+              <p class="about-subhead">Cybersecurity Analyst · Digital Forensics · SOC &amp; Incident Response</p>
+              <p class="about-location"><ion-icon name="location-sharp"></ion-icon> Thane, Maharashtra, India • <ion-icon name="airplane-outline"></ion-icon> Open to Relocation</p>
             </div>
           </div>
           <p class="about-narrative">
-            Cybersecurity student building practical security tools in Python — including a network packet sniffer,
-            file integrity monitoring system, and port scanner using SHA256 hashing and Scapy. Completed hands-on
-            labs on TryHackMe and certifications in AWS Cloud and network security. Comfortable across Linux,
-            networking fundamentals, and security tooling, with a focus on writing clean, functional code and
-            documenting findings clearly.
+            I'm an MCA (Cybersecurity) student who has worked real investigations. During my Digital Forensics internship
+            at AiTechnoverse Infotech I acquired and analysed evidence across multiple confidential cases, from mobile
+            extractions with Cellebrite UFED to disk, Windows and network forensics with Autopsy, FTK and Magnet tools, and
+            wrote court-style reports. Outside of casework I build security tooling in Python, practise on CyberDefenders,
+            PortSwigger and TryHackMe, and am developing <strong>SentinelX</strong>, an AI-driven cyber deception and
+            breach &amp; attack simulation platform.
           </p>
         </div>
 
         <div class="about-highlights-grid">
           <div class="about-highlight-card">
-            <span class="card-icon">🛡️</span>
-            <h4>Network Defense</h4>
-            <p>Traffic capture, packet dissection, port scanning, and anomaly detection using Scapy, Wireshark, and Python sockets.</p>
+            <span class="card-icon">🔍</span>
+            <h4>Digital Forensics</h4>
+            <p>Evidence imaging, disk, Windows, mobile (iOS &amp; Android) and network forensics, timeline analysis and chain of custody.</p>
+          </div>
+          <div class="about-highlight-card">
+            <span class="card-icon">🚨</span>
+            <h4>SOC &amp; Incident Response</h4>
+            <p>Log and traffic analysis, IOC and phishing analysis, mapping attacker behaviour to MITRE ATT&amp;CK, SIEM / EDR basics.</p>
+          </div>
+          <div class="about-highlight-card">
+            <span class="card-icon">🎯</span>
+            <h4>VAPT &amp; AppSec</h4>
+            <p>Vulnerability assessment, web app pentesting, OWASP Top 10, XXE and SSRF exploitation and fixes, CVE analysis.</p>
           </div>
           <div class="about-highlight-card">
             <span class="card-icon">☁️</span>
-            <h4>AWS Cloud Security</h4>
-            <p>AWS Certified Cloud Practitioner and AWS re/Start graduate trained in cloud architecture, IAM policies, and infrastructure hardening.</p>
+            <h4>Cloud &amp; Automation</h4>
+            <p>AWS (IAM, EC2, S3, VPC, CloudWatch) plus Python, Bash and Docker for building and automating security tools.</p>
           </div>
-          <div class="about-highlight-card">
-            <span class="card-icon">🐍</span>
-            <h4>Python Automation</h4>
-            <p>Custom defensive and offensive tooling: FIM monitors, log analyzers, packet sniffers, and credential analysis scripts.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EXPERIENCE SECTION ========== -->
+    <section id="experience" class="section">
+      <h2 class="section-title reveal"><span class="title-accent">//</span> Experience</h2>
+      <p class="section-subtitle reveal">Real casework, plus continuous hands-on practice in labs and CTFs</p>
+
+      <article class="exp-card reveal">
+        <div class="exp-head">
+          <div class="exp-icon"><ion-icon name="finger-print-outline"></ion-icon></div>
+          <div class="exp-title">
+            <h3>Digital Forensics Intern</h3>
+            <span class="exp-org">AiTechnoverse Infotech Pvt. Ltd.</span>
           </div>
-          <div class="about-highlight-card">
-            <span class="card-icon">🐧</span>
-            <h4>Linux &amp; Security Tools</h4>
-            <p>Daily workflow in Kali Linux utilizing Nmap, Metasploit, Burp Suite, Bash scripting, and command-line forensics.</p>
+          <div class="exp-meta">
+            <span class="exp-date">Sep 2026 – Dec 2026</span>
+            <span class="exp-type">3-month internship</span>
           </div>
+        </div>
+        <ul class="exp-list">
+          <li>Acquired and imaged digital evidence and analysed it across multiple confidential investigations.</li>
+          <li>Performed mobile forensics on iOS and Android devices using Cellebrite UFED and Cellebrite Reader.</li>
+          <li>Conducted disk, Windows and network forensics using Autopsy, FTK and Magnet Forensics tools.</li>
+          <li>Documented findings in court-style forensic reports with evidence and a reproducible methodology.</li>
+        </ul>
+        <div class="tech-tags">
+          <span>Cellebrite UFED</span>
+          <span>Cellebrite Reader</span>
+          <span>Autopsy</span>
+          <span>FTK</span>
+          <span>Magnet Forensics</span>
+          <span>Chain of Custody</span>
+          <span>Forensic Reporting</span>
+        </div>
+      </article>
+
+      <h3 class="sub-heading reveal"><ion-icon name="flask-outline"></ion-icon> Hands-On Labs &amp; CTFs</h3>
+      <div class="labs-grid">
+        <div class="lab-card reveal">
+          <span class="lab-platform">CyberDefenders</span>
+          <h4>TeamCity CVE-2024-27198 Investigation</h4>
+          <p>Investigated an authentication-bypass exploit of JetBrains TeamCity in Wireshark and mapped the attacker's activity to MITRE ATT&amp;CK.</p>
+          <div class="tech-tags"><span>Wireshark</span><span>MITRE ATT&amp;CK</span><span>Blue Team</span></div>
+        </div>
+        <div class="lab-card reveal">
+          <span class="lab-platform">PortSwigger Academy</span>
+          <h4>XXE &amp; SSRF Labs</h4>
+          <p>Worked through XML external entity and server-side request forgery labs using Burp Suite.</p>
+          <div class="tech-tags"><span>Burp Suite</span><span>XXE</span><span>SSRF</span></div>
+        </div>
+        <div class="lab-card reveal">
+          <span class="lab-platform">TryHackMe · picoCTF</span>
+          <h4>XXE Injection Room &amp; CTFs</h4>
+          <p>Completed the TryHackMe XXE Injection room and Pre Security path, plus multiple picoCTF challenges.</p>
+          <div class="tech-tags"><span>Web Exploitation</span><span>Forensics</span><span>CTF</span></div>
         </div>
       </div>
     </section>
@@ -197,135 +271,166 @@
     <!-- ========== SKILLS & TOOLS SECTION ========== -->
     <section id="skills" class="section">
       <h2 class="section-title reveal"><span class="title-accent">//</span> Cybersecurity Skills &amp; Tools</h2>
-      <p class="section-subtitle reveal">Core technical arsenal spanning offensive testing, defensive monitoring, cloud environments, and scripting</p>
+      <p class="section-subtitle reveal">Forensic, defensive and offensive toolkit, backed by cloud and scripting fundamentals</p>
 
       <!-- Interactive Tools Grid -->
       <div class="tools-showcase reveal">
+        <div class="tool-badge"><ion-icon name="phone-portrait-outline"></ion-icon><span>Cellebrite UFED</span></div>
+        <div class="tool-badge"><ion-icon name="search-outline"></ion-icon><span>Autopsy</span></div>
+        <div class="tool-badge"><ion-icon name="albums-outline"></ion-icon><span>FTK</span></div>
+        <div class="tool-badge"><ion-icon name="magnet-outline"></ion-icon><span>Magnet Forensics</span></div>
         <div class="tool-badge"><ion-icon name="wifi-outline"></ion-icon><span>Wireshark</span></div>
+        <div class="tool-badge"><ion-icon name="bug-outline"></ion-icon><span>Burp Suite</span></div>
         <div class="tool-badge"><ion-icon name="scan-outline"></ion-icon><span>Nmap</span></div>
         <div class="tool-badge"><ion-icon name="terminal-outline"></ion-icon><span>Metasploit</span></div>
-        <div class="tool-badge"><ion-icon name="bug-outline"></ion-icon><span>Burp Suite</span></div>
-        <div class="tool-badge"><ion-icon name="logo-python"></ion-icon><span>Python</span></div>
-        <div class="tool-badge"><ion-icon name="logo-tux"></ion-icon><span>Linux / Kali</span></div>
-        <div class="tool-badge"><ion-icon name="cloud-outline"></ion-icon><span>AWS Cloud</span></div>
         <div class="tool-badge"><ion-icon name="git-network-outline"></ion-icon><span>Scapy</span></div>
-        <div class="tool-badge"><ion-icon name="key-outline"></ion-icon><span>SHA256 / Cryptography</span></div>
-        <div class="tool-badge"><ion-icon name="analytics-outline"></ion-icon><span>SIEM &amp; Log Analysis</span></div>
-        <div class="tool-badge"><ion-icon name="server-outline"></ion-icon><span>TCP/IP &amp; Sockets</span></div>
-        <div class="tool-badge"><ion-icon name="shield-outline"></ion-icon><span>FIM (File Integrity)</span></div>
+        <div class="tool-badge"><ion-icon name="logo-tux"></ion-icon><span>Kali Linux</span></div>
+        <div class="tool-badge"><ion-icon name="logo-python"></ion-icon><span>Python</span></div>
+        <div class="tool-badge"><ion-icon name="cube-outline"></ion-icon><span>Docker</span></div>
+        <div class="tool-badge"><ion-icon name="cloud-outline"></ion-icon><span>AWS</span></div>
+        <div class="tool-badge"><ion-icon name="grid-outline"></ion-icon><span>MITRE ATT&amp;CK</span></div>
       </div>
 
-      <!-- Skills Progress Grid -->
-      <div class="skills-grid">
-        <div class="skill-item reveal">
-          <div class="skill-info">
-            <span><ion-icon name="scan-outline"></ion-icon> Nmap &amp; Network Reconnaissance</span>
-            <span>85%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-fill" data-width="85"></div>
-          </div>
+      <!-- Skill Categories -->
+      <div class="skill-cats">
+        <div class="skill-cat reveal">
+          <h4><ion-icon name="pulse-outline"></ion-icon> SOC &amp; Incident Response</h4>
+          <div class="chip-row"><span>Log &amp; Traffic Analysis</span><span>IOC Analysis</span><span>Phishing Analysis</span><span>MITRE ATT&amp;CK</span><span>SIEM / EDR Basics</span></div>
         </div>
-        <div class="skill-item reveal">
-          <div class="skill-info">
-            <span><ion-icon name="wifi-outline"></ion-icon> Wireshark &amp; Packet Analysis</span>
-            <span>82%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-fill" data-width="82"></div>
-          </div>
+        <div class="skill-cat reveal">
+          <h4><ion-icon name="finger-print-outline"></ion-icon> Digital Forensics</h4>
+          <div class="chip-row"><span>Evidence Imaging</span><span>Disk Forensics</span><span>Windows Forensics</span><span>Mobile (iOS &amp; Android)</span><span>Network Forensics</span><span>Timeline Analysis</span><span>Chain of Custody</span><span>Forensic Reporting</span></div>
         </div>
-        <div class="skill-item reveal">
-          <div class="skill-info">
-            <span><ion-icon name="logo-python"></ion-icon> Python Security Tool Development</span>
-            <span>88%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-fill" data-width="88"></div>
-          </div>
+        <div class="skill-cat reveal">
+          <h4><ion-icon name="bug-outline"></ion-icon> VAPT &amp; AppSec</h4>
+          <div class="chip-row"><span>Vulnerability Assessment</span><span>Web App Pentesting</span><span>OWASP Top 10</span><span>XXE</span><span>SSRF</span><span>CVE Analysis</span></div>
         </div>
-        <div class="skill-item reveal">
-          <div class="skill-info">
-            <span><ion-icon name="logo-tux"></ion-icon> Linux Administration &amp; Kali Linux</span>
-            <span>80%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-fill" data-width="80"></div>
-          </div>
+        <div class="skill-cat reveal">
+          <h4><ion-icon name="construct-outline"></ion-icon> Security Tools</h4>
+          <div class="chip-row"><span>Wireshark</span><span>Burp Suite</span><span>Nmap</span><span>Metasploit (basics)</span><span>Scapy</span><span>Kali Linux</span><span>Docker</span><span>Git</span></div>
         </div>
-        <div class="skill-item reveal">
-          <div class="skill-info">
-            <span><ion-icon name="cloud-outline"></ion-icon> AWS Cloud &amp; Security Services</span>
-            <span>75%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-fill" data-width="75"></div>
-          </div>
+        <div class="skill-cat reveal">
+          <h4><ion-icon name="cloud-outline"></ion-icon> Cloud &amp; Programming</h4>
+          <div class="chip-row"><span>AWS IAM</span><span>EC2</span><span>S3</span><span>VPC</span><span>CloudWatch</span><span>Python</span><span>Bash</span><span>SQL</span><span>Flask</span><span>Linux</span><span>Windows</span></div>
         </div>
-        <div class="skill-item reveal">
-          <div class="skill-info">
-            <span><ion-icon name="bug-outline"></ion-icon> Burp Suite &amp; Web Vulnerabilities</span>
-            <span>72%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-fill" data-width="72"></div>
-          </div>
-        </div>
-        <div class="skill-item reveal">
-          <div class="skill-info">
-            <span><ion-icon name="terminal-outline"></ion-icon> Metasploit &amp; Exploitation Basics</span>
-            <span>70%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-fill" data-width="70"></div>
-          </div>
-        </div>
-        <div class="skill-item reveal">
-          <div class="skill-info">
-            <span><ion-icon name="analytics-outline"></ion-icon> SIEM, Event Monitoring &amp; Log Analysis</span>
-            <span>74%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-fill" data-width="74"></div>
-          </div>
+        <div class="skill-cat reveal">
+          <h4><ion-icon name="git-network-outline"></ion-icon> Networking</h4>
+          <div class="chip-row"><span>TCP/IP</span><span>OSI Model</span><span>DNS</span><span>HTTP/HTTPS</span><span>SSH</span><span>Packet Analysis</span></div>
         </div>
       </div>
     </section>
 
-    <!-- ========== PROJECTS SECTION (EXACTLY 8 PROJECTS) ========== -->
+    <!-- ========== PROJECTS SECTION ========== -->
     <section id="projects" class="section">
       <h2 class="section-title reveal"><span class="title-accent">//</span> Security Projects</h2>
-      <p class="section-subtitle reveal">8 hands-on cybersecurity projects built in Python covering network reconnaissance, traffic analysis, blue team defense, and cryptography</p>
+      <p class="section-subtitle reveal">From a full deception &amp; attack-simulation platform to focused Python tools for detection, recon and cryptanalysis</p>
+
+      <!-- Featured Project: SentinelX -->
+      <article class="featured-project reveal">
+        <div class="featured-body">
+          <div class="featured-badges">
+            <span class="featured-label"><ion-icon name="star"></ion-icon> Featured</span>
+            <span class="dev-badge"><span class="status-pulse-dot"></span> In Development</span>
+          </div>
+          <h3>SentinelX</h3>
+          <p class="featured-tagline">AI Cyber Deception &amp; Breach and Attack Simulation Platform</p>
+          <ul class="exp-list">
+            <li>Combines honeypot-based deception with Breach and Attack Simulation (BAS) to continuously validate defences.</li>
+            <li>Engines for threat intelligence, risk scoring and dashboards that complement existing SIEM and EDR tools.</li>
+          </ul>
+          <div class="tech-tags">
+            <span>Python</span><span>FastAPI</span><span>React</span><span>PostgreSQL</span><span>Elasticsearch</span><span>Docker</span>
+          </div>
+          <a href="https://github.com/ItsPiyushVishwakarma" target="_blank" rel="noopener noreferrer" class="card-link featured-link">
+            Follow Progress on GitHub <span>→</span>
+          </a>
+        </div>
+        <div class="featured-visual" aria-hidden="true">
+          <div class="fv-terminal">
+            <p><span class="fv-g">[deception]</span> honeypot ssh-22 ......... <span class="fv-ok">ARMED</span></p>
+            <p><span class="fv-g">[bas]</span> T1059 cmd-exec sim ......... <span class="fv-warn">DETECTED</span></p>
+            <p><span class="fv-g">[bas]</span> T1021 lateral-move sim ..... <span class="fv-bad">MISSED</span></p>
+            <p><span class="fv-g">[intel]</span> IOC feed sync ............ <span class="fv-ok">OK</span></p>
+            <p><span class="fv-g">[risk]</span> coverage score ........... <span class="fv-warn">72/100</span></p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Filters -->
+      <div class="project-filters reveal" role="group" aria-label="Filter projects">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="defense">Blue Team</button>
+        <button class="filter-btn" data-filter="offense">Red Team / VAPT</button>
+        <button class="filter-btn" data-filter="network">Network</button>
+      </div>
 
       <div class="projects-grid">
 
-        <!-- Project 1: Port Scanner -->
-        <div class="project-card reveal">
+        <!-- Network Vulnerability Scanner -->
+        <div class="project-card reveal" data-category="offense network">
           <div class="card-header">
-            <span class="card-icon">📡</span>
-            <span class="card-tag">Network Security</span>
+            <span class="card-icon">🎯</span>
+            <span class="card-tag">Vulnerability Assessment</span>
           </div>
-          <h3>Python Port Scanner</h3>
-          <p>A fast TCP port scanner built using Python sockets for discovering active services, banner grabbing, and identifying exposed ports on target machines.</p>
+          <h3>Network Vulnerability Scanner</h3>
+          <p>Automates Nmap service scans, enriches findings with live NVD CVE lookups, and produces structured risk reports for each host.</p>
           <div class="tech-tags">
             <span>Python</span>
-            <span>Sockets</span>
-            <span>TCP/IP</span>
-            <span>Recon</span>
+            <span>Nmap</span>
+            <span>NVD CVE API</span>
+            <span>Risk Reports</span>
           </div>
-          <a href="https://github.com/ItsPiyushVishwakarma/Python-Port-Scanner" target="_blank" rel="noopener noreferrer" class="card-link">
+          <a href="https://github.com/ItsPiyushVishwakarma/Network-Vulnerability-Scanner" target="_blank" rel="noopener noreferrer" class="card-link">
             View on GitHub <span>→</span>
           </a>
         </div>
 
-        <!-- Project 2: Log Analyzer -->
-        <div class="project-card reveal">
+        <!-- XXE Vulnerability Lab -->
+        <div class="project-card reveal" data-category="offense">
+          <div class="card-header">
+            <span class="card-icon">🧪</span>
+            <span class="card-tag">AppSec Lab</span>
+          </div>
+          <h3>XXE Vulnerability Lab</h3>
+          <p>Built a deliberately vulnerable app, exploited XXE for local file disclosure and SSRF, then patched the parser and retested to confirm the fix.</p>
+          <div class="tech-tags">
+            <span>Python</span>
+            <span>Flask</span>
+            <span>lxml</span>
+            <span>Docker</span>
+          </div>
+          <a href="https://github.com/ItsPiyushVishwakarma" target="_blank" rel="noopener noreferrer" class="card-link">
+            View GitHub Profile <span>→</span>
+          </a>
+        </div>
+
+        <!-- Malware Analysis Lab -->
+        <div class="project-card reveal" data-category="defense">
+          <div class="card-header">
+            <span class="card-icon">🦠</span>
+            <span class="card-tag">Malware Analysis</span>
+          </div>
+          <h3>Malware Analysis Lab</h3>
+          <p>Weekly malware analysis practicals in isolated Flare-VM (Windows) and REMnux (Linux) virtual machines, documented with notes and a practical workbook.</p>
+          <div class="tech-tags">
+            <span>Flare-VM</span>
+            <span>REMnux</span>
+            <span>Static Analysis</span>
+            <span>Dynamic Analysis</span>
+          </div>
+          <a href="https://github.com/ItsPiyushVishwakarma/Malware-Analysis" target="_blank" rel="noopener noreferrer" class="card-link">
+            View on GitHub <span>→</span>
+          </a>
+        </div>
+
+        <!-- Log Analyzer -->
+        <div class="project-card reveal" data-category="defense">
           <div class="card-header">
             <span class="card-icon">📊</span>
             <span class="card-tag">Blue Team / SIEM</span>
           </div>
           <h3>Python Log Analyzer</h3>
-          <p>Automated Python log analysis engine for parsing authentication and server logs, detecting brute-force attempts, IP anomalies, and suspicious activities.</p>
+          <p>Parses authentication and server logs to detect brute-force attempts, anomalous IPs and other suspicious activity.</p>
           <div class="tech-tags">
             <span>Python</span>
             <span>Regex</span>
@@ -337,36 +442,17 @@
           </a>
         </div>
 
-        <!-- Project 3: Password Strength Checker -->
-        <div class="project-card reveal">
-          <div class="card-header">
-            <span class="card-icon">🔐</span>
-            <span class="card-tag">Identity &amp; Cryptography</span>
-          </div>
-          <h3>Password Strength Checker</h3>
-          <p>Security tool evaluating password complexity against NIST guidelines, calculating entropy scores, and alerting users on vulnerabilities and dictionary patterns.</p>
-          <div class="tech-tags">
-            <span>Python</span>
-            <span>Entropy</span>
-            <span>NIST Standards</span>
-            <span>Regex</span>
-          </div>
-          <a href="https://github.com/ItsPiyushVishwakarma/Password-Strength-Checker" target="_blank" rel="noopener noreferrer" class="card-link">
-            View on GitHub <span>→</span>
-          </a>
-        </div>
-
-        <!-- Project 4: File Integrity Checker -->
-        <div class="project-card reveal">
+        <!-- File Integrity Checker -->
+        <div class="project-card reveal" data-category="defense">
           <div class="card-header">
             <span class="card-icon">🔒</span>
             <span class="card-tag">Blue Team / FIM</span>
           </div>
           <h3>Python File Integrity Checker</h3>
-          <p>File Integrity Monitoring (FIM) tool using cryptographic SHA256 hashing to baseline system files and immediately flag unauthorized modifications, deletions, or tampered code.</p>
+          <p>File Integrity Monitoring tool that baselines files with SHA-256 and flags unauthorized modifications, deletions or tampering.</p>
           <div class="tech-tags">
             <span>Python</span>
-            <span>SHA256</span>
+            <span>SHA-256</span>
             <span>FIM</span>
             <span>Integrity Monitoring</span>
           </div>
@@ -375,14 +461,14 @@
           </a>
         </div>
 
-        <!-- Project 5: Network Packet Sniffer -->
-        <div class="project-card reveal">
+        <!-- Network Packet Sniffer -->
+        <div class="project-card reveal" data-category="network defense">
           <div class="card-header">
             <span class="card-icon">🌐</span>
             <span class="card-tag">Network Traffic Analysis</span>
           </div>
           <h3>Python Network Packet Sniffer</h3>
-          <p>Live network packet sniffer leveraging Scapy to capture and analyze raw network frames, inspect IP/TCP/UDP headers, extract payload details, and spot anomalies.</p>
+          <p>Live packet sniffer built on Scapy that captures raw frames, inspects IP/TCP/UDP headers, extracts payload details and spots anomalies.</p>
           <div class="tech-tags">
             <span>Python</span>
             <span>Scapy</span>
@@ -394,18 +480,37 @@
           </a>
         </div>
 
-        <!-- Project 6: Password Hash Cracker -->
-        <div class="project-card reveal">
+        <!-- Port Scanner -->
+        <div class="project-card reveal" data-category="network offense">
+          <div class="card-header">
+            <span class="card-icon">📡</span>
+            <span class="card-tag">Network Security</span>
+          </div>
+          <h3>Python Port Scanner</h3>
+          <p>Fast TCP port scanner built on Python sockets for discovering active services, banner grabbing and identifying exposed ports.</p>
+          <div class="tech-tags">
+            <span>Python</span>
+            <span>Sockets</span>
+            <span>TCP/IP</span>
+            <span>Recon</span>
+          </div>
+          <a href="https://github.com/ItsPiyushVishwakarma/Python-Port-Scanner" target="_blank" rel="noopener noreferrer" class="card-link">
+            View on GitHub <span>→</span>
+          </a>
+        </div>
+
+        <!-- Password Hash Cracker -->
+        <div class="project-card reveal" data-category="offense">
           <div class="card-header">
             <span class="card-icon">💀</span>
             <span class="card-tag">Red Team / Cryptanalysis</span>
           </div>
           <h3>Password Hash Cracker</h3>
-          <p>Educational password hash cracker demonstrating dictionary attacks, salt identification, and cryptographic analysis against MD5, SHA1, and SHA256 hashes.</p>
+          <p>Educational hash cracker demonstrating dictionary attacks, salt identification and cryptanalysis against MD5, SHA-1 and SHA-256.</p>
           <div class="tech-tags">
             <span>Python</span>
             <span>Hashlib</span>
-            <span>Brute Force</span>
+            <span>Dictionary Attack</span>
             <span>Cryptanalysis</span>
           </div>
           <a href="https://github.com/ItsPiyushVishwakarma/Password-Hash-Cracker" target="_blank" rel="noopener noreferrer" class="card-link">
@@ -413,38 +518,38 @@
           </a>
         </div>
 
-        <!-- Project 7: Network Vulnerability Scanner -->
-        <div class="project-card reveal">
+        <!-- Password Strength Checker -->
+        <div class="project-card reveal" data-category="defense">
           <div class="card-header">
-            <span class="card-icon">🎯</span>
-            <span class="card-tag">Vulnerability Assessment</span>
+            <span class="card-icon">🔐</span>
+            <span class="card-tag">Identity &amp; Cryptography</span>
           </div>
-          <h3>Network Vulnerability Scanner</h3>
-          <p>Automated network vulnerability scanner integrating Nmap scripts and Python to audit subnets, identify outdated software versions, and query known CVE databases.</p>
+          <h3>Password Strength Checker</h3>
+          <p>Evaluates password complexity against NIST guidelines, calculates entropy scores and warns about weak or dictionary patterns.</p>
           <div class="tech-tags">
             <span>Python</span>
-            <span>Nmap NSE</span>
-            <span>CVE Lookup</span>
-            <span>Audit Reports</span>
+            <span>Entropy</span>
+            <span>NIST Standards</span>
+            <span>Regex</span>
           </div>
-          <a href="https://github.com/ItsPiyushVishwakarma/Network-Vulnerability-Scanner" target="_blank" rel="noopener noreferrer" class="card-link">
+          <a href="https://github.com/ItsPiyushVishwakarma/Password-Strength-Checker" target="_blank" rel="noopener noreferrer" class="card-link">
             View on GitHub <span>→</span>
           </a>
         </div>
 
-        <!-- Project 8: Keylogger Email Alert -->
-        <div class="project-card reveal">
+        <!-- Keylogger + Detection Guide -->
+        <div class="project-card reveal" data-category="offense defense">
           <div class="card-header">
             <span class="card-icon">⌨️</span>
             <span class="card-tag">Malware Research &amp; Defense</span>
           </div>
-          <h3>Keylogger Email Alert</h3>
-          <p>Research prototype created for educational malware analysis and understanding stealthy exfiltration channels over SMTP to develop detection rules.</p>
+          <h3>Keylogger + Detection Guide</h3>
+          <p>Educational research prototype showing how keyloggers exfiltrate data over SMTP, paired with a guide for detecting that behaviour.</p>
           <div class="tech-tags">
             <span>Python</span>
             <span>Pynput</span>
             <span>SMTP Exfil</span>
-            <span>EDR Evasion Defense</span>
+            <span>Detection Engineering</span>
           </div>
           <a href="https://github.com/ItsPiyushVishwakarma/Keylogger-Email-Alert" target="_blank" rel="noopener noreferrer" class="card-link">
             View on GitHub <span>→</span>
@@ -457,7 +562,7 @@
     <!-- ========== CERTIFICATIONS SECTION (GROUPED BY BRAND) ========== -->
     <section id="certifications" class="section">
       <h2 class="section-title reveal"><span class="title-accent">//</span> Verified Certifications &amp; Credentials</h2>
-      <p class="section-subtitle reveal">Accredited certifications from Google, IBM, Amazon Web Services, Deloitte, and Microsoft</p>
+      <p class="section-subtitle reveal">Credentials from AWS, the National Security Database, Google, IBM, Deloitte, TryHackMe and Microsoft</p>
 
       <!-- Master Folder Banner -->
       <a href="https://drive.google.com/drive/folders/1xz4IanF-Qi2WKqfM6W45i53_M5wmv3Vo?usp=sharing" target="_blank" rel="noopener noreferrer" class="cert-folder-card reveal">
@@ -466,125 +571,39 @@
         </div>
         <div class="folder-text-wrap">
           <h3>Official Cybersecurity Certificates Drive Folder</h3>
-          <p>Click here to access all 13+ verified certificate documents, credential PDFs, and completion transcripts directly on Google Drive.</p>
+          <p>Access all verified certificate documents, credential PDFs and completion transcripts directly on Google Drive.</p>
         </div>
         <span class="btn btn-secondary folder-btn">
           Open Google Drive Folder <ion-icon name="open-outline"></ion-icon>
         </span>
       </a>
 
-      <!-- CATEGORY 1: GOOGLE CYBERSECURITY -->
+      <!-- CATEGORY: PROFESSIONAL RECOGNITION -->
       <div class="cert-group reveal">
         <div class="cert-group-header">
-          <div class="brand-pill google-pill">
-            <ion-icon name="logo-google"></ion-icon> Google
+          <div class="brand-pill nsd-pill">
+            <ion-icon name="shield-half-outline"></ion-icon> Recognition
           </div>
-          <h3>Google Cybersecurity Professional Certificates</h3>
+          <h3>Professional Recognition &amp; Cloud</h3>
         </div>
         <div class="certs-grid">
 
-          <a href="https://drive.google.com/file/d/1kn5DSpyIUgRif07Kr3G9R7w_-dDl1kc8/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="cert-card">
-            <div class="cert-icon google-color"><ion-icon name="git-network-outline"></ion-icon></div>
+          <a href="https://drive.google.com/drive/folders/1xz4IanF-Qi2WKqfM6W45i53_M5wmv3Vo?usp=sharing" target="_blank" rel="noopener noreferrer" class="cert-card cert-card-highlight">
+            <div class="cert-icon nsd-color"><ion-icon name="shield-checkmark-outline"></ion-icon></div>
             <div class="cert-body">
-              <span class="cert-issuer">Google Career Certificates</span>
-              <h3>Google: Connect &amp; Protect — Network &amp; Network Security</h3>
-              <p>Network architecture, TCP/IP defense, intrusion prevention, firewalls, and network vulnerability mitigation.</p>
-              <span class="cert-link">View Original PDF <ion-icon name="open-outline"></ion-icon></span>
+              <span class="cert-issuer">National Security Database · Sep 2026</span>
+              <h3>Security Researcher (Empanelled)</h3>
+              <p>Empanelled as a vetted security researcher with India's National Security Database.</p>
+              <span class="cert-link">In Certificates Folder <ion-icon name="open-outline"></ion-icon></span>
             </div>
           </a>
 
-          <a href="https://drive.google.com/file/d/1TOP65sxkJWk7x49Xw58oefeMBrDSKjtr/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="cert-card">
-            <div class="cert-icon google-color"><ion-icon name="shield-outline"></ion-icon></div>
-            <div class="cert-body">
-              <span class="cert-issuer">Google Career Certificates</span>
-              <h3>Google: Foundations of Cybersecurity</h3>
-              <p>Core security domains, threat actor models, CIA triad, security ethics, and defensive frameworks.</p>
-              <span class="cert-link">View Original PDF <ion-icon name="open-outline"></ion-icon></span>
-            </div>
-          </a>
-
-          <a href="https://drive.google.com/file/d/1LpMWz4rYFn5oVGm0UAstSf7vc2w2cOsX/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="cert-card">
-            <div class="cert-icon google-color"><ion-icon name="warning-outline"></ion-icon></div>
-            <div class="cert-body">
-              <span class="cert-issuer">Google Career Certificates</span>
-              <h3>Google: Play It Safe — Manage Security Risks</h3>
-              <p>NIST Cybersecurity Framework, threat modeling, incident mitigation, risk matrices, and compliance auditing.</p>
-              <span class="cert-link">View Original PDF <ion-icon name="open-outline"></ion-icon></span>
-            </div>
-          </a>
-
-          <a href="https://drive.google.com/file/d/1A0ffF07d2qVVGVteKp92W5BatcHRQhzy/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="cert-card">
-            <div class="cert-icon google-color"><ion-icon name="terminal-outline"></ion-icon></div>
-            <div class="cert-body">
-              <span class="cert-issuer">Google Career Certificates</span>
-              <h3>Google: Tools of the Trade — Linux and SQL</h3>
-              <p>Linux command line administration, permissions, Bash environments, and database auditing with SQL queries.</p>
-              <span class="cert-link">View Original PDF <ion-icon name="open-outline"></ion-icon></span>
-            </div>
-          </a>
-
-        </div>
-      </div>
-
-      <!-- CATEGORY 2: IBM CYBERSECURITY -->
-      <div class="cert-group reveal">
-        <div class="cert-group-header">
-          <div class="brand-pill ibm-pill">
-            <ion-icon name="hardware-chip-outline"></ion-icon> IBM
-          </div>
-          <h3>IBM Cybersecurity Specialization</h3>
-        </div>
-        <div class="certs-grid">
-
-          <a href="https://drive.google.com/file/d/1LrV9OS2y2HCYMmzCV8JbnA9ioo2yS-HM/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="cert-card">
-            <div class="cert-icon ibm-color"><ion-icon name="bug-outline"></ion-icon></div>
-            <div class="cert-body">
-              <span class="cert-issuer">IBM Professional Security</span>
-              <h3>IBM: Introduction to Cybersecurity Tools &amp; Cyberattacks</h3>
-              <p>Analysis of attack vectors, malware archetypes, social engineering, firewalls, cryptography, and defense tools.</p>
-              <span class="cert-link">View Original PDF <ion-icon name="open-outline"></ion-icon></span>
-            </div>
-          </a>
-
-          <a href="https://drive.google.com/file/d/13MQ3L85uxtiwNpcd-ENj_P6_X0MbxzL4/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="cert-card">
-            <div class="cert-icon ibm-color"><ion-icon name="lock-closed-outline"></ion-icon></div>
-            <div class="cert-body">
-              <span class="cert-issuer">IBM Professional Security</span>
-              <h3>IBM: Introduction to Cybersecurity Essentials</h3>
-              <p>Fundamental security concepts, threat actors, confidentiality/integrity controls, and modern defense posture.</p>
-              <span class="cert-link">View Original PDF <ion-icon name="open-outline"></ion-icon></span>
-            </div>
-          </a>
-
-          <a href="https://drive.google.com/file/d/16vjLFEe1rqmUMjnbCIC9hFny65sOucxW/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="cert-card">
-            <div class="cert-icon ibm-color"><ion-icon name="briefcase-outline"></ion-icon></div>
-            <div class="cert-body">
-              <span class="cert-issuer">IBM Professional Security</span>
-              <h3>IBM: Introduction to Cybersecurity Careers</h3>
-              <p>SOC operations, incident responder roles, industry best practices, and compliance frameworks.</p>
-              <span class="cert-link">View Original PDF <ion-icon name="open-outline"></ion-icon></span>
-            </div>
-          </a>
-
-        </div>
-      </div>
-
-      <!-- CATEGORY 3: AWS & CLOUD PRACTITIONER -->
-      <div class="cert-group reveal">
-        <div class="cert-group-header">
-          <div class="brand-pill aws-pill">
-            <ion-icon name="cloud-done-outline"></ion-icon> Amazon Web Services
-          </div>
-          <h3>AWS Cloud &amp; Security Certifications</h3>
-        </div>
-        <div class="certs-grid">
-
-          <a href="https://drive.google.com/file/d/1tZwSBYpbx5y-EFL4Vckbaq9PwmVHCg_Y/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="cert-card">
+          <a href="https://drive.google.com/file/d/1tZwSBYpbx5y-EFL4Vckbaq9PwmVHCg_Y/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="cert-card cert-card-highlight">
             <div class="cert-icon aws-color"><ion-icon name="ribbon-outline"></ion-icon></div>
             <div class="cert-body">
-              <span class="cert-issuer">Amazon Web Services</span>
+              <span class="cert-issuer">Amazon Web Services · Apr 2025</span>
               <h3>AWS Certified Cloud Practitioner</h3>
-              <p>Official foundational cloud credential covering AWS core services, Shared Responsibility Model, IAM, and cloud security architecture.</p>
+              <p>Foundational cloud credential covering AWS core services, the Shared Responsibility Model, IAM and cloud security architecture.</p>
               <span class="cert-link">View Original PDF <ion-icon name="open-outline"></ion-icon></span>
             </div>
           </a>
@@ -593,8 +612,8 @@
             <div class="cert-icon aws-color"><ion-icon name="school-outline"></ion-icon></div>
             <div class="cert-body">
               <span class="cert-issuer">AWS re/Start Program</span>
-              <h3>AWS Certified Cloud Practitioner Certificate</h3>
-              <p>Intensive cloud cohort covering Linux administration, Python scripting, networking, security controls, and hands-on AWS labs.</p>
+              <h3>AWS re/Start Graduate</h3>
+              <p>Intensive cloud cohort covering Linux administration, Python scripting, networking, security controls and hands-on AWS labs.</p>
               <span class="cert-link">View Original PDF <ion-icon name="open-outline"></ion-icon></span>
             </div>
           </a>
@@ -602,23 +621,129 @@
         </div>
       </div>
 
-      <!-- CATEGORY 4: INDUSTRY SIMULATION & PROFESSIONAL FOUNDATIONS -->
+      <!-- CATEGORY: GOOGLE CYBERSECURITY -->
+      <div class="cert-group reveal">
+        <div class="cert-group-header">
+          <div class="brand-pill google-pill">
+            <ion-icon name="logo-google"></ion-icon> Google
+          </div>
+          <h3>Google Cybersecurity Professional Certificate Courses</h3>
+        </div>
+        <div class="certs-grid">
+
+          <a href="https://drive.google.com/file/d/1TOP65sxkJWk7x49Xw58oefeMBrDSKjtr/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="cert-card">
+            <div class="cert-icon google-color"><ion-icon name="shield-outline"></ion-icon></div>
+            <div class="cert-body">
+              <span class="cert-issuer">Google · Coursera</span>
+              <h3>Foundations of Cybersecurity</h3>
+              <p>Core security domains, threat actor models, CIA triad, security ethics and defensive frameworks.</p>
+              <span class="cert-link">View Original PDF <ion-icon name="open-outline"></ion-icon></span>
+            </div>
+          </a>
+
+          <a href="https://drive.google.com/file/d/1LpMWz4rYFn5oVGm0UAstSf7vc2w2cOsX/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="cert-card">
+            <div class="cert-icon google-color"><ion-icon name="warning-outline"></ion-icon></div>
+            <div class="cert-body">
+              <span class="cert-issuer">Google · Coursera</span>
+              <h3>Play It Safe — Manage Security Risks</h3>
+              <p>NIST Cybersecurity Framework, threat modeling, incident mitigation, risk matrices and compliance auditing.</p>
+              <span class="cert-link">View Original PDF <ion-icon name="open-outline"></ion-icon></span>
+            </div>
+          </a>
+
+          <a href="https://drive.google.com/file/d/1kn5DSpyIUgRif07Kr3G9R7w_-dDl1kc8/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="cert-card">
+            <div class="cert-icon google-color"><ion-icon name="git-network-outline"></ion-icon></div>
+            <div class="cert-body">
+              <span class="cert-issuer">Google · Coursera</span>
+              <h3>Connect &amp; Protect — Networks and Network Security</h3>
+              <p>Network architecture, TCP/IP defence, intrusion prevention, firewalls and network vulnerability mitigation.</p>
+              <span class="cert-link">View Original PDF <ion-icon name="open-outline"></ion-icon></span>
+            </div>
+          </a>
+
+          <a href="https://drive.google.com/file/d/1A0ffF07d2qVVGVteKp92W5BatcHRQhzy/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="cert-card">
+            <div class="cert-icon google-color"><ion-icon name="terminal-outline"></ion-icon></div>
+            <div class="cert-body">
+              <span class="cert-issuer">Google · Coursera</span>
+              <h3>Tools of the Trade — Linux and SQL</h3>
+              <p>Linux command line administration, permissions, Bash environments and database auditing with SQL queries.</p>
+              <span class="cert-link">View Original PDF <ion-icon name="open-outline"></ion-icon></span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- CATEGORY: IBM CYBERSECURITY -->
+      <div class="cert-group reveal">
+        <div class="cert-group-header">
+          <div class="brand-pill ibm-pill">
+            <ion-icon name="hardware-chip-outline"></ion-icon> IBM
+          </div>
+          <h3>IBM Cybersecurity Courses</h3>
+        </div>
+        <div class="certs-grid">
+
+          <a href="https://drive.google.com/file/d/1LrV9OS2y2HCYMmzCV8JbnA9ioo2yS-HM/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="cert-card">
+            <div class="cert-icon ibm-color"><ion-icon name="bug-outline"></ion-icon></div>
+            <div class="cert-body">
+              <span class="cert-issuer">IBM · Coursera</span>
+              <h3>Introduction to Cybersecurity Tools &amp; Cyberattacks</h3>
+              <p>Attack vectors, malware archetypes, social engineering, firewalls, cryptography and defence tools.</p>
+              <span class="cert-link">View Original PDF <ion-icon name="open-outline"></ion-icon></span>
+            </div>
+          </a>
+
+          <a href="https://drive.google.com/file/d/13MQ3L85uxtiwNpcd-ENj_P6_X0MbxzL4/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="cert-card">
+            <div class="cert-icon ibm-color"><ion-icon name="lock-closed-outline"></ion-icon></div>
+            <div class="cert-body">
+              <span class="cert-issuer">IBM · Coursera</span>
+              <h3>Introduction to Cybersecurity Essentials</h3>
+              <p>Fundamental security concepts, threat actors, confidentiality and integrity controls, modern defence posture.</p>
+              <span class="cert-link">View Original PDF <ion-icon name="open-outline"></ion-icon></span>
+            </div>
+          </a>
+
+          <a href="https://drive.google.com/file/d/16vjLFEe1rqmUMjnbCIC9hFny65sOucxW/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="cert-card">
+            <div class="cert-icon ibm-color"><ion-icon name="briefcase-outline"></ion-icon></div>
+            <div class="cert-body">
+              <span class="cert-issuer">IBM · Coursera</span>
+              <h3>Introduction to Cybersecurity Careers</h3>
+              <p>SOC operations, incident responder roles, industry best practices and compliance frameworks.</p>
+              <span class="cert-link">View Original PDF <ion-icon name="open-outline"></ion-icon></span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- CATEGORY: INDUSTRY SIMULATION & PLATFORMS -->
       <div class="cert-group reveal">
         <div class="cert-group-header">
           <div class="brand-pill industry-pill">
             <ion-icon name="business-outline"></ion-icon> Industry
           </div>
-          <h3>Job Simulations &amp; Professional Qualifications</h3>
+          <h3>Job Simulations, Platforms &amp; Professional Courses</h3>
         </div>
         <div class="certs-grid">
 
           <a href="https://drive.google.com/file/d/1kNYhAAOziB-vU0EjXkGbzWWfoGIBaOU2/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="cert-card">
             <div class="cert-icon industry-color"><ion-icon name="flame-outline"></ion-icon></div>
             <div class="cert-body">
-              <span class="cert-issuer">Deloitte Virtual Experience</span>
-              <h3>Deloitte Cyber Job Simulation Certificate</h3>
-              <p>Hands-on enterprise cyber simulation: incident response, forensics triage, risk assessment, and executive security briefings.</p>
+              <span class="cert-issuer">Deloitte via Forage · Jun 2026</span>
+              <h3>Deloitte Cyber Job Simulation</h3>
+              <p>Enterprise cyber simulation: incident response, forensics triage, risk assessment and executive security briefings.</p>
               <span class="cert-link">View Original PDF <ion-icon name="open-outline"></ion-icon></span>
+            </div>
+          </a>
+
+          <a href="https://drive.google.com/drive/folders/1xz4IanF-Qi2WKqfM6W45i53_M5wmv3Vo?usp=sharing" target="_blank" rel="noopener noreferrer" class="cert-card">
+            <div class="cert-icon industry-color"><ion-icon name="flag-outline"></ion-icon></div>
+            <div class="cert-body">
+              <span class="cert-issuer">TryHackMe · Oct 2026</span>
+              <h3>Pre Security Learning Path</h3>
+              <p>Networking, web fundamentals, Linux and Windows basics: the groundwork for offensive and defensive security.</p>
+              <span class="cert-link">In Certificates Folder <ion-icon name="open-outline"></ion-icon></span>
             </div>
           </a>
 
@@ -627,7 +752,7 @@
             <div class="cert-body">
               <span class="cert-issuer">Microsoft &amp; LinkedIn</span>
               <h3>Career Essentials in System Administration</h3>
-              <p>System configuration, server maintenance, Active Directory concepts, virtualization, and endpoint administration.</p>
+              <p>System configuration, server maintenance, Active Directory concepts, virtualization and endpoint administration.</p>
               <span class="cert-link">View Original PDF <ion-icon name="open-outline"></ion-icon></span>
             </div>
           </a>
@@ -637,7 +762,7 @@
             <div class="cert-body">
               <span class="cert-issuer">LinkedIn Learning / NASBA</span>
               <h3>LinkedIn Learning Certificate (NASBA Accredited)</h3>
-              <p>Professional CPE credits accredited by National Association of State Boards of Accountancy covering IT &amp; security governance.</p>
+              <p>Professional CPE credits accredited by the National Association of State Boards of Accountancy covering IT and security governance.</p>
               <span class="cert-link">View Original PDF <ion-icon name="open-outline"></ion-icon></span>
             </div>
           </a>
@@ -647,67 +772,82 @@
 
     </section>
 
-    <!-- ========== RESUME SECTION ========== -->
+    <!-- ========== RESUME & EDUCATION SECTION ========== -->
     <section id="resume" class="section">
-      <h2 class="section-title reveal"><span class="title-accent">//</span> Education &amp; Career Path</h2>
+      <h2 class="section-title reveal"><span class="title-accent">//</span> Resume &amp; Education</h2>
+      <p class="section-subtitle reveal">One-page resume, updated November 2026. Preview it here or download the PDF.</p>
 
-      <div class="resume-content">
-        <!-- Education Timeline -->
-        <div>
-          <h3 class="timeline-heading reveal">
-            <ion-icon name="school-outline"></ion-icon> Academic Background
-          </h3>
-          <div class="timeline">
-            <div class="timeline-item reveal">
-              <div class="timeline-dot"></div>
-              <h3>Master of Computer Applications (MCA)</h3>
-              <span class="timeline-university">Chhatrapati Shivaji Maharaj University, Panvel</span>
-              <span class="timeline-date">2024 — Present</span>
-              <p>Specialization in Cybersecurity, network defenses, cloud operations, operating systems, and cryptography.</p>
+      <div class="resume-layout">
+        <!-- Resume Preview Card -->
+        <div class="resume-card reveal">
+          <div class="resume-card-head">
+            <div class="resume-file">
+              <span class="pdf-icon"><ion-icon name="document-text"></ion-icon></span>
+              <div>
+                <strong>Piyush Resume</strong>
+                <span>PDF · 1 page · Updated Nov 2026</span>
+              </div>
             </div>
-            <div class="timeline-item reveal">
-              <div class="timeline-dot"></div>
-              <h3>Bachelor's Degree in Computer Science</h3>
-              <span class="timeline-date">2021 — 2024</span>
-              <p>Solid foundation in computer networking, data structures, algorithms, databases, and software design.</p>
-            </div>
+          </div>
+          <div class="resume-preview">
+            <iframe src="assets/Piyush_Resume.pdf#view=FitH&amp;toolbar=0&amp;navpanes=0" title="Piyush Vishwakarma resume preview" loading="lazy"></iframe>
+          </div>
+          <div class="resume-actions">
+            <a href="assets/Piyush_Resume.pdf" class="btn btn-primary" download>
+              <ion-icon name="download-outline"></ion-icon> Download PDF
+            </a>
+            <a href="assets/Piyush_Resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="open-outline"></ion-icon> Open in New Tab
+            </a>
           </div>
         </div>
 
-        <!-- Experience / Training Timeline -->
+        <!-- Education Timeline -->
         <div>
           <h3 class="timeline-heading reveal">
-            <ion-icon name="shield-half-outline"></ion-icon> Practical Labs &amp; Training
+            <ion-icon name="school-outline"></ion-icon> Education
           </h3>
           <div class="timeline">
             <div class="timeline-item reveal">
               <div class="timeline-dot"></div>
-              <h3>Hands-on Cybersecurity Tooling</h3>
-              <span class="timeline-date">Ongoing</span>
-              <p>Built 8 independent security tools in Python: port scanners, packet sniffers, FIM systems, password evaluators, and hash crackers.</p>
+              <h3>MCA in Cybersecurity</h3>
+              <span class="timeline-university">Chhatrapati Shivaji Maharaj University, Panvel</span>
+              <span class="timeline-date">2025 — 2027 (Expected)</span>
+              <p>Master of Computer Applications specialising in cybersecurity, network defence, cloud operations and cryptography.</p>
             </div>
             <div class="timeline-item reveal">
               <div class="timeline-dot"></div>
-              <h3>TryHackMe &amp; Practical Cyber Labs</h3>
-              <span class="timeline-date">Ongoing</span>
-              <p>Active practice across network scanning (Nmap), protocol analysis (Wireshark), offensive enumeration (Metasploit, Burp Suite), and Linux privilege escalation.</p>
+              <h3>B.Sc. Information Technology</h3>
+              <span class="timeline-university">Tilak College, University of Mumbai</span>
+              <span class="timeline-date">2021 — 2024</span>
+              <p>Foundation in computer networking, operating systems, databases, programming and software design.</p>
+            </div>
+          </div>
+
+          <h3 class="timeline-heading reveal">
+            <ion-icon name="trophy-outline"></ion-icon> Milestones
+          </h3>
+          <div class="timeline">
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <h3>Digital Forensics Internship</h3>
+              <span class="timeline-date">Sep 2026 — Dec 2026</span>
+              <p>Casework across mobile, disk, Windows and network forensics at AiTechnoverse Infotech.</p>
+            </div>
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <h3>NSD Empanelled Security Researcher</h3>
+              <span class="timeline-date">Sep 2026</span>
+              <p>Recognised by the National Security Database as a vetted security researcher.</p>
             </div>
             <div class="timeline-item reveal">
               <div class="timeline-dot"></div>
               <h3>AWS Certified Cloud Practitioner</h3>
-              <span class="timeline-date">Verified Credential</span>
-              <p>Completed AWS re/Start rigorous cloud curriculum and passed the foundational AWS Certified Cloud Practitioner examination.</p>
+              <span class="timeline-date">Apr 2025</span>
+              <p>Completed the AWS re/Start programme and passed the Cloud Practitioner exam.</p>
             </div>
           </div>
         </div>
-      </div>
-
-      <!-- Resume Download CTA -->
-      <div class="resume-download reveal">
-        <p>Ready to inspect complete technical experience and lab documentation?</p>
-        <a href="https://drive.google.com/file/d/1kHEtKGbH6kl5P-fatvZp3MGc2OH2B8MX/view?usp=sharing" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-          <ion-icon name="document-text-outline"></ion-icon> Download Piyush's Resume (PDF)
-        </a>
       </div>
     </section>
 
@@ -719,38 +859,48 @@
         <div class="contact-info reveal">
           <div class="status-badge">
             <span class="status-dot"></span>
-            <span>Open to Work — Mumbai / Hybrid / Remote</span>
+            <span>Open to Work — Mumbai / Hybrid / Remote · Open to Relocation</span>
           </div>
 
           <h3>Let's Connect &amp; Collaborate</h3>
           <p>
-            I'm currently seeking cybersecurity opportunities (SOC Analyst, Junior Security Engineer, Cloud Security Trainee).
-            Whether you have a role, a question about my tools, or want to connect — my inbox is always open!
+            I'm looking for roles as a SOC Analyst, Digital Forensics Analyst, Incident Responder or VAPT Analyst.
+            Whether you have a role, a question about my work, or just want to connect, my inbox is always open.
           </p>
 
           <div class="contact-details">
             <div class="contact-detail">
               <span class="detail-icon"><ion-icon name="mail-outline"></ion-icon></span>
               <a href="mailto:vpiyush780@gmail.com" class="contact-email-link">vpiyush780@gmail.com</a>
+              <button class="copy-btn" id="copyEmail" data-copy="vpiyush780@gmail.com" aria-label="Copy email address">
+                <ion-icon name="copy-outline"></ion-icon><span>Copy</span>
+              </button>
             </div>
             <div class="contact-detail">
-              <span class="detail-icon"><ion-icon name="location-outline"></ion-icon></span>
-              <span>Thane, Maharashtra, India</span>
+              <span class="detail-icon"><ion-icon name="logo-linkedin"></ion-icon></span>
+              <a href="https://www.linkedin.com/in/itspiyushkarma-cybersecurity" target="_blank" rel="noopener noreferrer" class="contact-email-link">linkedin.com/in/itspiyushkarma-cybersecurity</a>
             </div>
             <div class="contact-detail">
               <span class="detail-icon"><ion-icon name="logo-github"></ion-icon></span>
               <a href="https://github.com/ItsPiyushVishwakarma" target="_blank" rel="noopener noreferrer" class="contact-email-link">github.com/ItsPiyushVishwakarma</a>
             </div>
+            <div class="contact-detail">
+              <span class="detail-icon"><ion-icon name="location-outline"></ion-icon></span>
+              <span>Thane, Maharashtra, India</span>
+            </div>
           </div>
 
           <div class="social-links">
+            <a href="https://www.linkedin.com/in/itspiyushkarma-cybersecurity" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
             <a href="https://github.com/ItsPiyushVishwakarma" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
               <ion-icon name="logo-github"></ion-icon>
             </a>
             <a href="mailto:vpiyush780@gmail.com" aria-label="Send Email">
               <ion-icon name="mail-outline"></ion-icon>
             </a>
-            <a href="https://drive.google.com/file/d/1kHEtKGbH6kl5P-fatvZp3MGc2OH2B8MX/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="View Resume">
+            <a href="assets/Piyush_Resume.pdf" download aria-label="Download Resume">
               <ion-icon name="document-text-outline"></ion-icon>
             </a>
             <a href="https://drive.google.com/drive/folders/1xz4IanF-Qi2WKqfM6W45i53_M5wmv3Vo?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="View Certificates">
@@ -782,10 +932,21 @@
     <p class="footer-tagline">
       Designed and Built by Piyush Vishwakarma
     </p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/itspiyushkarma-cybersecurity" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com/ItsPiyushVishwakarma" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="assets/Piyush_Resume.pdf" download>Resume</a>
+      <a href="mailto:vpiyush780@gmail.com">Email</a>
+    </div>
     <p class="footer-sub">
       &copy; 2026 Piyush Vishwakarma. All security tools and code open-sourced on <a href="https://github.com/ItsPiyushVishwakarma" target="_blank" rel="noopener noreferrer">GitHub</a>.
     </p>
   </footer>
+
+  <!-- Back to Top -->
+  <a href="#hero" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
 
   <script src="script.js"></script>
 </body>
